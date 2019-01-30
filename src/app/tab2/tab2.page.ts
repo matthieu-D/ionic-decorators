@@ -7,8 +7,8 @@ import { Traductor } from '../decorators/traductor.decorator';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
-@TimeTracker("Tab2")
+// @TimeTracker("Tab2")
 export class Tab2Page {
-  @Traductor("eng") // PropertyDecorator
+  // @Traductor("eng") // PropertyDecorator
   welcomeMessage: String;
 }

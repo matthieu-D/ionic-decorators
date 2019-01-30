@@ -7,7 +7,7 @@ import { MethodHijacker } from '../decorators/methodHijacker.decorator';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-@TimeTracker("Tab3")
+// @TimeTracker("Tab3")
 export class Tab3Page {
   constructor() {
     this.sayGoodBye();

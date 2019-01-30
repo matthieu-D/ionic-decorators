@@ -1,4 +1,4 @@
-export function TimeTracker(viewName) {
+export function TimeTracker() {
   return function (constructor) {
     var startTime;
 
@@ -16,10 +16,10 @@ export function TimeTracker(viewName) {
 
     constructor.prototype[ionViewWillLeaveHook] = function ( ...args ) {
       const endTime = new Date();
-      const timeSpent = endTime.getTime() - startTime.getTime(); 
+      constructor.timeSpent = endTime.getTime() - startTime.getTime();
 
-      console.log("The user spent", timeSpent, " ms on:", viewName);
       original2 && original2.apply(this, args);
     }
+    return constructor;
   }
 }
