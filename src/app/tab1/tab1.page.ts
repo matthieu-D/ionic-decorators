@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 // import { TimeTracker } from '../decorators/timeTracker.decorator';
-import { PropsChangedTracker} from '../decorators/propsChangedTracker.decorator';
+// import { PropsChangedTracker} from '../decorators/propsChangedTracker.decorator';
 import { ExitTimeTrackerModal } from '../decorators/exit-modal/exitTimeTrackerModal.decorator';
-// import { ExitModal } from '../decorators/exit-modal/ExitModal.decorator';
+// import { ExitModal } from '../decorators/exit-modal/exitModal.decorator';
 
 @Component({
   selector: 'app-tab1',
@@ -10,12 +10,13 @@ import { ExitTimeTrackerModal } from '../decorators/exit-modal/exitTimeTrackerMo
   styleUrls: ['tab1.page.scss']
 })
 // @TimeTracker("Tab1")
+// @ExitModal()
 @ExitTimeTrackerModal("Tab1")
 export class Tab1Page {
   // @PropsChangedTracker() // PropertyDecorator
-  simpleProp;
+  // simpleProp;
 
   constructor() {
-    this.simpleProp = 1;
+    // this.simpleProp = 1;
   }
 }

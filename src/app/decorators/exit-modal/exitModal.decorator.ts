@@ -29,3 +29,31 @@ export function ExitModal(viewName) {
     }
   }
 }
+
+// import { ModalController } from '@ionic/angular';
+
+// import { AppModule } from '../../app.module';
+// import { ExitModalPage } from './exitModal.component';
+
+// export function ExitModal() {
+//   return function (constructor) {
+//     let modalController = AppModule.injector.get(ModalController)
+
+//     const ionViewWillLeaveHook = "ionViewWillLeave";
+//     const original = constructor.prototype[ionViewWillLeaveHook];
+
+//     constructor.prototype[ionViewWillLeaveHook] = function ( ...args ) {
+//       original && original.apply(this, args);
+      
+//       showModal();
+//     }
+
+//     async function showModal() {
+//       let modal = await modalController.create({
+//         component: ExitModalPage
+//       });
+      
+//       return await modal.present();
+//     }
+//   }
+// }

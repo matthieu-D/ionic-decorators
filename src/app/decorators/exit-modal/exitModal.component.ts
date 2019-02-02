@@ -10,3 +10,14 @@ export class ExitModalPage {
 
   constructor() {}
 }
+
+// import { Component } from '@angular/core';
+
+// @Component({
+//   selector: 'modal-page',
+//   template: '<h1 text-center>Good Bye</h1>'
+// })
+// export class ExitModalPage {
+//   constructor() {}
+
+// }
